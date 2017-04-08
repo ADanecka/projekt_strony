@@ -1,0 +1,228 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*STYLOWANIE INDEX.HTML*/
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333366;
+	line-height: 1.7;
+	margin: 0 auto; /*w tym przypadku używamy margina do wyrownania zawartości strony, liczba 0 każe przykleić się do góry i do dołu strony, natomiast auto- wyrównuje boki strony względem pulpitu jaki ma użytkownik*/ 
+}
+
+p {
+	margin-top: 6px; /*Odstępy między akapitami, maożemy to łączyć: *-top, *-bottom (od dołu), *-left(z lewej strony), *-right (prawej strony)*/ 
+}
+
+h2, h3, label {
+	color: #45474F; /*kolor czcionki*/
+}
+
+
+h2, h3, strong{
+	font-weight: 600; /*tekst pogrubiony*/
+}
+
+h2{
+	font-size: 26px;
+	padding-bottom: 30px /*przesuwamy h2 od strony*/
+}
+
+h3{
+	font-size: 18px; /*wysokość czcionki*/
+}
+
+section { /*ustawiamy dla każdej sekcji po uzyciu float*/
+	clear: both;
+	padding: 50px 0px;
+	overflow: auto; /*często stosowany mechanizm po uzyciu float*/
+}
+
+
+.przes-h2{
+	margin-left: 30px;
+}
+
+.wyrownanie{
+	max-width: 1100px;
+	margin: 0 auto; /*środkowanie zawartości na stronie*/
+}
+
+.polowa {
+	width: 50%;
+	float: left;
+}
+
+/*calss - .nazwaKlasy
+id - #nazwaId
+*/
+/*STYLIZUJEMY NAGLOWEK*/
+.gora {
+	height: 70px;
+	background: #339999;
+}
+
+.gora .main-menu a {
+	color: #000000;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.gora .main-menu a:hover { /*po najechaniu kursorem na menu, pojawi się białe tło, a litery zmienią kolor na czerwony*/
+	color: #993333;
+	background-color: white;
+	border-radius: 9px; /*zaokraglenie katów */
+	padding:5px;/*ustawiamy szerokość białęgo tła*/
+}
+
+.logo {
+	width: 300px;
+	height: 75px;
+	float: left; /*w tym przypadku float powoduje, że zalaczniki znajda sie po lewej stronie loga*/
+}
+
+.main-menu li { /*dzieki float nasze odsylacze, beda lezaly obok siebie*/
+	float: left;
+	padding: 0 10px;
+}
+
+.main-menu {
+	float: right;
+	line-height: 70px; /*dzieki line-height zalaczniki wyrownuja sie do sroda wzgledem wysokosci naglowka (patrz na wartosc w .gora), height i line height musza miec te same wartosci*/
+}
+
+
+/*STYLIZUJEMY TERAZ FORMULARZ*/
+.icon{
+	width: 300px;
+	height: 300px;
+}
+
+.polowa-wys{
+	text-align: center; /*srodkujemy logo*/
+}
+
+.kolortla2{
+	padding: 0px 200px; 
+}
+
+.szukaj select{
+	margin-bottom: 16px;
+	border-radius: 2px;
+	border: 1px solid #DDDDDD;
+	padding: 8px;
+	width: 35%;
+}
+
+.szukaj input{
+	margin-bottom: 16px;
+	border-radius: 2px; /*zaokraglamy sobie inputy- czyli te prostokaty w ktore wpisujemy dane*/
+	border: 1px solid #DDDDDD;
+	padding: 8px;
+	width: 40%;
+}
+
+.button:hover{
+	background: #339999;
+	cursor: pointer; /*zamienia nam myszkę ze strzałki w łapkę*/ 
+}
+
+
+
+
+/*W TEJ SEKCJI ZAJMUJEMY SIĘ WYSTYLIZOWANIEM 3 OSTATNICH WRZUCONYCH SAMOCHDÓW DO BAZY DANYCH*/
+
+/*robimy miniaturki zdjęc*/
+.img{
+	width: 250px; /*szerokość w px*/
+	height: 130px; /*wysokosc w px*/
+	background: white;
+	border-radius: 9px;
+	padding: 10px
+}
+
+/*dzielimy na kolumny (zdjecie po lewej stronie, opis i cena po prawej)*/
+
+.minaut{
+	background-color: #CCCCFF; /*ustawiamy kolor dla calej sekcji*/
+	padding: 0px 100;
+}
+
+.kolortla{
+	padding: 10px 100px; /*ustawiamy paddingi dla wszystkich samochodów*/
+}
+
+/*FOOTER*/
+footer{
+	background-color: #BDBDBD;
+	padding: 20px; 
+}
+
+footer p{
+	color: #000000;
+}
+
+/*STYLOWANIE REJESTRACJA.HTML*/
+.trzy-kol{
+	width: 33.33333%;
+	float: left;
+}
+
+.rejestruj input{
+	margin-bottom: 16px;
+	border-radius: 2px; /*zaokraglamy sobie inputy- czyli te prostokaty w ktore wpisujemy dane*/
+	border: 1px solid #DDDDDD;
+	padding: 10px;
+	width: 50%;
+}
+
+/*STYLOWANIE ZALOGUJ.HTML*/
+
+.zaloguj input{
+	margin-bottom: 16px;
+	border-radius: 2px; /*zaokraglamy sobie inputy- czyli te prostokaty w ktore wpisujemy dane*/
+	border: 1px solid #DDDDDD;
+	padding: 8px;
+	width: 30%;
+}
